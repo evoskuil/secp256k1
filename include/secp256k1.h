@@ -1,6 +1,10 @@
 #ifndef _SECP256K1_
 #define _SECP256K1_
 
+#ifdef __clang__
+#pragma clang diagnostic ignored "-Wunused-value"
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif
