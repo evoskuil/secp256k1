@@ -1,0 +1,531 @@
+Microsoft (R) Build Engine version 12.0.30723.0
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/20/2015 2:12:34 AM.
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "DynDebug|x64".
+       ValidateProjects:
+         The project "secp256k1_bench" is not selected for building in solution configuration "DynDebug|x64".
+         The project "secp256k1_tests" is not selected for building in solution configuration "DynDebug|x64".
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (2) on node 1 (default targets).
+     2>ConfigInfo:
+         ConfigurationType : DynamicLibrary
+         Configuration     : DebugDLL
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\dynamic\secp256k1.dll
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\dynamic\secp256k1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\src\ /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\\ /Zi /nologo /W3 /WX- /MP /Od /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _DLL /D _WINDLL /D _DEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /D _WINDLL /Gm- /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\dynamic\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\dynamic\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue ..\..\..\..\src\secp256k1.c
+         secp256k1.c
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\dynamic\secp256k1.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\dynamic\secp256k1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\dynamic\secp256k1.lib" /MACHINE:X64 /DLL C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\dynamic\resource.res
+         C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\dynamic\secp256k1.obj
+         secp256k1.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\dynamic\secp256k1.dll
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\dynamic\secp256k1.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\dynamic\secp256k1.tlog\secp256k1.lastbuildstate".
+     2>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (default targets).
+     1>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.92
+Microsoft (R) Build Engine version 12.0.30723.0
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/20/2015 2:12:35 AM.
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "DynRelease|x64".
+       ValidateProjects:
+         The project "secp256k1_bench" is not selected for building in solution configuration "DynRelease|x64".
+         The project "secp256k1_tests" is not selected for building in solution configuration "DynRelease|x64".
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (2) on node 1 (default targets).
+     2>ConfigInfo:
+         ConfigurationType : DynamicLibrary
+         Configuration     : ReleaseDLL
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\dynamic\secp256k1.dll
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\dynamic\secp256k1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\src\ /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\\ /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /Oi /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _DLL /D _WINDLL /D NDEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /D _WINDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\dynamic\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\dynamic\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue /Oy- ..\..\..\..\src\secp256k1.c
+         secp256k1.c
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\dynamic\secp256k1.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\dynamic\secp256k1.pdb" /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\dynamic\secp256k1.lib" /MACHINE:X64 /DLL C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\dynamic\resource.res
+         C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\dynamic\secp256k1.obj
+         secp256k1.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\dynamic\secp256k1.dll
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\dynamic\secp256k1.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\dynamic\secp256k1.tlog\secp256k1.lastbuildstate".
+     2>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (default targets).
+     1>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.91
+Microsoft (R) Build Engine version 12.0.30723.0
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/20/2015 2:12:36 AM.
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "LtcgDebug|x64".
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (2) on node 1 (default targets).
+     2>ConfigInfo:
+         ConfigurationType : StaticLibrary
+         Configuration     : DebugLTCG
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1.lib
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\ltcg\secp256k1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\src\ /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\\ /Z7 /nologo /W3 /WX- /MP /Od /GL /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _LIB /D _DEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\ltcg\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\ltcg\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue ..\..\..\..\src\secp256k1.c
+         secp256k1.c
+       ResourceCompile:
+         All outputs are up-to-date.
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\Lib.exe /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1.lib" /NOLOGO /MACHINE:X64 /LTCG /MACHINE:X64 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\ltcg\resource.res
+         C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\ltcg\secp256k1.obj
+         secp256k1.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1.lib
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\ltcg\secp256k1.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\ltcg\secp256k1.tlog\secp256k1.lastbuildstate".
+     2>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (default targets).
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\secp256k1_tests.vcxproj" (3) on node 3 (default targets).
+     3>ConfigInfo:
+         ConfigurationType : Application
+         Configuration     : DebugLEXE
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_tests.exe
+       OptionInfo:
+         Option-gmp          : 
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\secp256k1_bench.vcxproj" (4) on node 2 (default targets).
+     4>ConfigInfo:
+         ConfigurationType : Application
+         Configuration     : DebugLEXE
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_bench.exe
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       LinkageInfo:
+         Linkage-secp256k1   : ltcg
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\ltcg\secp256k1_bench.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+     3>OptionInfo:
+         Option-assembly     : 
+     4>ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\..\secp256k1\ /Zi /nologo /W3 /WX- /MP /Od /GL /D EC_STATIC /D inline=__inline /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _WIN32_WINNT=0x0600 /D _CONSOLE /D _DEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\ltcg\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\ltcg\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue ..\..\..\..\src\bench_inv.c
+     3>OptionInfo:
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+         Option-testssl      : 
+       LinkageInfo:
+         Linkage-secp256k1   : ltcg
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\ltcg\secp256k1_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\..\secp256k1\ /Zi /nologo /W3 /WX- /MP /Od /GL /D EC_STATIC /D inline=__inline /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _WIN32_WINNT=0x0600 /D _CRT_SECURE_NO_WARNINGS /D _CONSOLE /D _DEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\ltcg\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\ltcg\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue ..\..\..\..\src\tests.c
+         tests.c
+     4>ClCompile:
+         bench_inv.c
+     3>Link:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_tests.exe" /NOLOGO /LIBPATH:C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\..\secp256k1\bin\x64\Debug\CTP_Nov2013\ltcg\ secp256k1.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_tests.pdb" /SUBSYSTEM:CONSOLE /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_tests.lib" /MACHINE:X64 /OPT:NOLBR /IGNORE:4099 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\ltcg\tests.obj
+         C:\Source\evoskuil\secp256k1\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1.lib
+         Generating code
+         Finished generating code
+     4>Link:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_bench.exe" /NOLOGO /LIBPATH:C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\..\secp256k1\bin\x64\Debug\CTP_Nov2013\ltcg\ secp256k1.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_bench.pdb" /SUBSYSTEM:CONSOLE /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_bench.lib" /MACHINE:X64 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\ltcg\bench_inv.obj
+         C:\Source\evoskuil\secp256k1\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1.lib
+         Generating code
+         Finished generating code
+     3>Link:
+         secp256k1_tests.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_tests.exe
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\ltcg\secp256k1_tests.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\ltcg\secp256k1_tests.tlog\secp256k1_tests.lastbuildstate".
+     3>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\secp256k1_tests.vcxproj" (default targets).
+     4>Link:
+         secp256k1_bench.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\ltcg\secp256k1_bench.exe
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\ltcg\secp256k1_bench.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\ltcg\secp256k1_bench.tlog\secp256k1_bench.lastbuildstate".
+     4>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\secp256k1_bench.vcxproj" (default targets).
+     1>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.02
+Microsoft (R) Build Engine version 12.0.30723.0
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/20/2015 2:12:38 AM.
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "LtcgRelease|x64".
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (2) on node 1 (default targets).
+     2>ConfigInfo:
+         ConfigurationType : StaticLibrary
+         Configuration     : ReleaseLTCG
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1.lib
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\ltcg\secp256k1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\src\ /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\\ /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /Oi /GL /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _LIB /D NDEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\ltcg\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\ltcg\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue /Oy- ..\..\..\..\src\secp256k1.c
+         secp256k1.c
+       ResourceCompile:
+         All outputs are up-to-date.
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\Lib.exe /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1.lib" /NOLOGO /MACHINE:X64 /LTCG /MACHINE:X64 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\ltcg\resource.res
+         C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\ltcg\secp256k1.obj
+         secp256k1.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1.lib
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\ltcg\secp256k1.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\ltcg\secp256k1.tlog\secp256k1.lastbuildstate".
+     2>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (default targets).
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\secp256k1_tests.vcxproj" (4) on node 3 (default targets).
+     4>ConfigInfo:
+         ConfigurationType : Application
+         Configuration     : ReleaseLEXE
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.exe
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+         Option-testssl      : 
+       LinkageInfo:
+         Linkage-secp256k1   : ltcg
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\secp256k1_bench.vcxproj" (3) on node 2 (default targets).
+     3>ConfigInfo:
+         ConfigurationType : Application
+         Configuration     : ReleaseLEXE
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_bench.exe
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       LinkageInfo:
+         Linkage-secp256k1   : ltcg
+     4>InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+     3>InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\ltcg\secp256k1_bench.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+     4>ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\..\secp256k1\ /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /Oi /GL /D EC_STATIC /D inline=__inline /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _WIN32_WINNT=0x0600 /D _CRT_SECURE_NO_WARNINGS /D _CONSOLE /D NDEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\ltcg\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\ltcg\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue /Oy- ..\..\..\..\src\tests.c
+     3>ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\..\secp256k1\ /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /Oi /GL /D EC_STATIC /D inline=__inline /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _WIN32_WINNT=0x0600 /D _CONSOLE /D NDEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\ltcg\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\ltcg\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue /Oy- ..\..\..\..\src\bench_inv.c
+         bench_inv.c
+     4>ClCompile:
+         tests.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\..\secp256k1\bin\x64\Release\CTP_Nov2013\ltcg\ secp256k1.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.lib" /MACHINE:X64 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\ltcg\tests.obj
+         C:\Source\evoskuil\secp256k1\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1.lib
+         Generating code
+     3>Link:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_bench.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\..\secp256k1\bin\x64\Release\CTP_Nov2013\ltcg\ secp256k1.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_bench.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_bench.lib" /MACHINE:X64 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\ltcg\bench_inv.obj
+         C:\Source\evoskuil\secp256k1\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1.lib
+         Generating code
+         Finished generating code
+     4>Link:
+         Finished generating code
+     3>Link:
+         secp256k1_bench.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_bench.exe
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\ltcg\secp256k1_bench.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\ltcg\secp256k1_bench.tlog\secp256k1_bench.lastbuildstate".
+     3>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\secp256k1_bench.vcxproj" (default targets).
+     4>Link:
+         secp256k1_tests.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.exe
+       PostBuildEvent:
+         C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.exe 5 41234567890987654321
+         :VCEnd
+         test count = 5
+         random seed = 18446744073709551615
+         random run = 9933114286236810219
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\ltcg\secp256k1_tests.tlog\secp256k1_tests.lastbuildstate".
+     4>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\secp256k1_tests.vcxproj" (default targets).
+     1>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.26
+Microsoft (R) Build Engine version 12.0.30723.0
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/20/2015 2:12:43 AM.
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "StaticDebug|x64".
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (2) on node 1 (default targets).
+     2>ConfigInfo:
+         ConfigurationType : StaticLibrary
+         Configuration     : DebugLIB
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1.lib
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\static\secp256k1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\src\ /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\\ /Z7 /nologo /W3 /WX- /MP /Od /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _LIB /D _DEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\static\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\static\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue ..\..\..\..\src\secp256k1.c
+         secp256k1.c
+       ResourceCompile:
+         All outputs are up-to-date.
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\Lib.exe /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1.lib" /NOLOGO /MACHINE:X64 /MACHINE:X64 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\static\resource.res
+         C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\static\secp256k1.obj
+         secp256k1.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1.lib
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\static\secp256k1.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Debug\CTP_Nov2013\static\secp256k1.tlog\secp256k1.lastbuildstate".
+     2>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (default targets).
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\secp256k1_bench.vcxproj" (3) on node 2 (default targets).
+     3>ConfigInfo:
+         ConfigurationType : Application
+         Configuration     : DebugSEXE
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_bench.exe
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\secp256k1_tests.vcxproj" (4) on node 3 (default targets).
+     4>ConfigInfo:
+         ConfigurationType : Application
+         Configuration     : DebugSEXE
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_tests.exe
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+         Option-testssl      : 
+       LinkageInfo:
+         Linkage-secp256k1   : static
+     3>LinkageInfo:
+         Linkage-secp256k1   : static
+     4>InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\static\secp256k1_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+     3>InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\static\secp256k1_bench.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\..\secp256k1\ /Zi /nologo /W3 /WX- /MP /Od /D EC_STATIC /D inline=__inline /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _WIN32_WINNT=0x0600 /D _CONSOLE /D _DEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\static\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\static\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue ..\..\..\..\src\bench_inv.c
+     4>ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\CL.exe /c /IC:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\..\secp256k1\ /Zi /nologo /W3 /WX- /MP /Od /D EC_STATIC /D inline=__inline /D USE_SCALAR_8X32 /D USE_FIELD_10X26 /D USE_ENDOMORPHISM /D USE_NUM_NONE /D USE_FIELD_INV_BUILTIN /D USE_SCALAR_INV_BUILTIN /D inline=__inline /D HAVE_BUILTIN_EXPECT=1 /D _WIN32_WINNT=0x0600 /D _CRT_SECURE_NO_WARNINGS /D _CONSOLE /D _DEBUG /D UNICODE /D _UNICODE /D WIN32 /D _WIN32 /D WIN64 /D _WIN64 /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\static\\" /Fd"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\static\vc120.pdb" /Gd /TC /wd4244 /wd4267 /analyze- /errorReport:queue ..\..\..\..\src\tests.c
+     3>ClCompile:
+         bench_inv.c
+     4>ClCompile:
+         tests.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_tests.exe" /NOLOGO /LIBPATH:C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\..\secp256k1\bin\x64\Debug\CTP_Nov2013\static\ secp256k1.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_tests.lib" /MACHINE:X64 /OPT:NOLBR /IGNORE:4099 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\static\tests.obj
+         C:\Source\evoskuil\secp256k1\bin\x64\Debug\CTP_Nov2013\static\secp256k1.lib
+     3>Link:
+         C:\Program Files (x86)\Microsoft Visual C++ Compiler Nov 2013 CTP\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_bench.exe" /NOLOGO /LIBPATH:C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\..\secp256k1\bin\x64\Debug\CTP_Nov2013\static\ secp256k1.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_bench.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_bench.lib" /MACHINE:X64 C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\static\bench_inv.obj
+         C:\Source\evoskuil\secp256k1\bin\x64\Debug\CTP_Nov2013\static\secp256k1.lib
+     4>Link:
+         secp256k1_tests.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_tests.exe
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\static\secp256k1_tests.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Debug\CTP_Nov2013\static\secp256k1_tests.tlog\secp256k1_tests.lastbuildstate".
+     4>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\secp256k1_tests.vcxproj" (default targets).
+     3>Link:
+         secp256k1_bench.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Debug\CTP_Nov2013\static\secp256k1_bench.exe
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\static\secp256k1_bench.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Debug\CTP_Nov2013\static\secp256k1_bench.tlog\secp256k1_bench.lastbuildstate".
+     3>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\secp256k1_bench.vcxproj" (default targets).
+     1>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.58
+Microsoft (R) Build Engine version 12.0.30723.0
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/20/2015 2:12:47 AM.
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "StaticRelease|x64".
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (2) on node 1 (default targets).
+     2>ConfigInfo:
+         ConfigurationType : StaticLibrary
+         Configuration     : ReleaseLIB
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\static\secp256k1.lib
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\static\secp256k1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         secp256k1.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\bin\x64\Release\CTP_Nov2013\static\secp256k1.lib
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\static\secp256k1.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\..\..\..\..\obj\secp256k1\x64\Release\CTP_Nov2013\static\secp256k1.tlog\secp256k1.lastbuildstate".
+     2>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1\secp256k1.vcxproj" (default targets).
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\secp256k1_bench.vcxproj" (4) on node 2 (default targets).
+     4>ConfigInfo:
+         ConfigurationType : Application
+         Configuration     : ReleaseSEXE
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Release\CTP_Nov2013\static\secp256k1_bench.exe
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+         Option-field64      : 
+         Option-scalar64     : 
+       LinkageInfo:
+         Linkage-secp256k1   : static
+     1>Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (1) is building "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\secp256k1_tests.vcxproj" (3) on node 3 (default targets).
+     3>ConfigInfo:
+         ConfigurationType : Application
+         Configuration     : ReleaseSEXE
+         PlatformToolset   : CTP_Nov2013
+         TargetPath        : C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\static\secp256k1_tests.exe
+       OptionInfo:
+         Option-gmp          : 
+         Option-assembly     : 
+         Option-endomorphism : true
+         Option-config       : 
+     4>InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\static\secp256k1_bench.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+     3>OptionInfo:
+         Option-field64      : 
+         Option-scalar64     : 
+         Option-testssl      : 
+       LinkageInfo:
+         Linkage-secp256k1   : static
+       InitializeBuildStatus:
+         Creating "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\static\secp256k1_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+     4>ClCompile:
+         All outputs are up-to-date.
+     3>ClCompile:
+         All outputs are up-to-date.
+     4>Link:
+         All outputs are up-to-date.
+         secp256k1_bench.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\bin\x64\Release\CTP_Nov2013\static\secp256k1_bench.exe
+     3>Link:
+         All outputs are up-to-date.
+         secp256k1_tests.vcxproj -> C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\static\secp256k1_tests.exe
+     4>FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\static\secp256k1_bench.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\..\..\..\..\obj\secp256k1_bench\x64\Release\CTP_Nov2013\static\secp256k1_bench.tlog\secp256k1_bench.lastbuildstate".
+     4>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_bench\secp256k1_bench.vcxproj" (default targets).
+     3>PostBuildEvent:
+         C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\bin\x64\Release\CTP_Nov2013\static\secp256k1_tests.exe 5 41234567890987654321
+         :VCEnd
+         test count = 5
+         random seed = 18446744073709551615
+         random run = 9933114286236810219
+       FinalizeBuildStatus:
+         Deleting file "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\static\secp256k1_tests.tlog\unsuccessfulbuild".
+         Touching "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\..\..\..\..\obj\secp256k1_tests\x64\Release\CTP_Nov2013\static\secp256k1_tests.tlog\secp256k1_tests.lastbuildstate".
+     3>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1_tests\secp256k1_tests.vcxproj" (default targets).
+     1>Done Building Project "C:\Source\evoskuil\secp256k1\builds\msvc\vs2013\secp256k1.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.48
