@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{148600EA-561B-4C78-A80A-2EB5046D0420}</ProjectGuid>
     <ProjectName>secp256k1</ProjectName>
-    <PlatformToolset>CTP_Nov2013</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <NuGetPackageImportStamp>4a417148</NuGetPackageImportStamp>
   </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">

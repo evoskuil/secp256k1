@@ -4,7 +4,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <ProjectGuid>{9F8CD353-5F8B-46D7-9DA3-17A06CCA634F}</ProjectGuid>
     <ProjectName>secp256k1_tests</ProjectName>
-    <PlatformToolset>CTP_Nov2013</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <NuGetPackageImportStamp>ae87ffba</NuGetPackageImportStamp>
   </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
