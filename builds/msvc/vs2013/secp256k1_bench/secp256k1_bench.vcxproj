@@ -65,7 +65,7 @@
     <Import Project="$(ProjectDir)$(ProjectName).props" />
   </ImportGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\src\bench_inv.c" />
+    <ClCompile Include="..\..\..\..\src\bench_internal.c" />
     <ClCompile Include="..\..\..\..\src\bench_recover.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
