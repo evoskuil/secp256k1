@@ -53,20 +53,20 @@
         <!-- libraries -->
 
         <!-- x86 Dynamic libraries (.dll) -->
-        <!--<file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).dll" />-->
-        <!--<file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />-->
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).dll" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />
 
         <!-- x86 Debugging symbols (.pdb) -->
         <!--<file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />-->
-        <!--<file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />-->
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />
 
         <!-- x86 Import libraries (.imp.lib) -->
-        <!--<file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).imp.lib" />-->
-        <!--<file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).imp.lib" />-->
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).imp.lib" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).imp.lib" />
 
         <!-- x86 Export libraries (.exp) -->
-        <!--<file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).exp" />-->
-        <!--<file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).exp" />-->
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).exp" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).exp" />
 
         <!-- x86 Static libraries (.lib) -->
         <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\static\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).lib" />
@@ -77,20 +77,20 @@
         <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\ltcg\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.lib" />
 
         <!-- x64 Dynamic libraries (.dll) -->
-        <!--<file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).dll" />-->
-        <!--<file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />-->
+        <file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).dll" />
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />
 
         <!-- x64 Debugging symbols (.pdb) -->
         <!--<file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />-->
-        <!--<file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />-->
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />
 
         <!-- x64 Import libraries (.imp.lib) -->
-        <!--file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).imp.lib" />-->
-        <!--<file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).imp.lib" />-->
+        <file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).imp.lib" />
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).imp.lib" />
 
         <!-- x64 Export libraries (.exp) -->
-        <!--<file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).exp" />-->
-        <!--<file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).exp" />-->
+        <file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).exp" />
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).exp" />
 
         <!-- x64 Static libraries (.lib) -->
         <file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\static\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).lib" />
@@ -132,7 +132,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$\(Linkage-$(package.target))' == 'static' Or '$\(Linkage-$(package.target))' == 'ltcg'">
     <ClCompile>
-      <PreprocessorDefinitions>EC_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SECP256K1_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
 
