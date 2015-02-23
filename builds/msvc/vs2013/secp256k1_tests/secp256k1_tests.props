@@ -26,7 +26,7 @@
       <PreprocessorDefinitions>_WIN32_WINNT=0x0600;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <!-- These are not standard library imports. The test code reaches into private implementation and as 
       such the tests require static linkage. For the same reason these symbol defines must match the library build. -->
-      <PreprocessorDefinitions>inline=__inline;HAVE_BUILTIN_EXPECT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       
       <PreprocessorDefinitions Condition="'$(Option-gmp)' == ''">USE_NUM_NONE;USE_FIELD_INV_BUILTIN;USE_SCALAR_INV_BUILTIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Option-gmp)' == 'true'">USE_NUM_GMP;USE_FIELD_INV_NUM;USE_SCALAR_INV_NUM;%(PreprocessorDefinitions)</PreprocessorDefinitions>

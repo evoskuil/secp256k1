@@ -24,7 +24,7 @@
       <AdditionalIncludeDirectories>$(RepoRoot)src\;$(RepoRoot)\%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <EnablePREfast>false</EnablePREfast>
-      <PreprocessorDefinitions>inline=__inline;HAVE_BUILTIN_EXPECT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       
       <PreprocessorDefinitions Condition="'$(Option-gmp)' == ''">USE_NUM_NONE;USE_FIELD_INV_BUILTIN;USE_SCALAR_INV_BUILTIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Option-gmp)' == 'true'">USE_NUM_GMP;USE_FIELD_INV_NUM;USE_SCALAR_INV_NUM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
