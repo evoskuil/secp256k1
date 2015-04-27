@@ -9,13 +9,23 @@
 
 #include <stdio.h>
 #include <math.h>
-#include "sys/time.h"
+
+#ifndef _MSC_VER
+#include <sys/time.h>
 
 static double gettimedouble(void) {
     struct timeval tv;
     gettimeofday(&tv, NULL);
     return tv.tv_usec * 0.000001 + tv.tv_sec;
 }
+#else
+#include <windows.h>
+
+// TODO: define gettimedouble for windows builds.
+static double gettimedouble(void) {
+    return 0.0;
+}
+#endif
 
 void print_number(double x) {
     double y = x;
