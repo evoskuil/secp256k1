@@ -29,6 +29,15 @@ libtool
 *.lo
 *.o
 *~
+
+/bin/
+/obj/
+*.VC.*
+*.suo
+*.ipch
+*.sdf
+*.user
+
 *.log
 *.trs
 
