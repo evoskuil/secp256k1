@@ -1,5 +1,5 @@
 @ECHO OFF
-REM Usage: [build_base.bat ..\vs2013\mysolution.sln 12]
+REM Usage: [buildbase.bat ..\vs2013\mysolution.sln 12]
 
 SET solution=%1
 SET version=%2
