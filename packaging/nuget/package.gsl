@@ -75,7 +75,7 @@
         <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\static\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).static.lib" />
 
         <!-- x86 Static libraries debugging symbols (.static.pdb) -->
-        <file src="..\\..\\obj\\$(package.target)\\Win32\\Release\\$(package.platformtoolset)\\static\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).static.pdb" />
+        <!--<file src="..\\..\\obj\\$(package.target)\\Win32\\Release\\$(package.platformtoolset)\\static\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).static.pdb" />-->
         <!--<file src="..\\..\\obj\\$(package.target)\\Win32\\Debug\\$(package.platformtoolset)\\static\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).static.pdb" />-->
 
 <!-- x86 Static link time code generation libraries (.ltcg.lib) -->
@@ -83,7 +83,7 @@
         <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\ltcg\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.lib" />
 
         <!-- x86 Static link time code generation libraries debugging symbols (.ltcg.pdb) -->
-        <file src="..\\..\\obj\\$(package.target)\\Win32\\Release\\$(package.platformtoolset)\\ltcg\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).ltcg.pdb" />
+        <!--<file src="..\\..\\obj\\$(package.target)\\Win32\\Release\\$(package.platformtoolset)\\ltcg\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).ltcg.pdb" />-->
         <!--<file src="..\\..\\obj\\$(package.target)\\Win32\\Debug\\$(package.platformtoolset)\\ltcg\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.pdb" />-->
 
 <!-- x64 Dynamic libraries (.dll) -->
@@ -107,7 +107,7 @@
         <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\static\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-sgd-$(package.pathversion).static.lib" />
 
         <!-- x64 Static libraries debugging symbols (.static.pdb) -->
-        <file src="..\\..\\obj\\$(package.target)\\x64\\Release\\$(package.platformtoolset)\\static\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).static.pdb" />
+        <!--<file src="..\\..\\obj\\$(package.target)\\x64\\Release\\$(package.platformtoolset)\\static\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).static.pdb" />-->
         <!--<file src="..\\..\\obj\\$(package.target)\\x64\\Debug\\$(package.platformtoolset)\\static\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-sgd-$(package.pathversion).static.pdb" />-->
 
 <!-- x64 Static link time code generation libraries (.ltcg.lib) -->
@@ -115,7 +115,7 @@
         <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\ltcg\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.lib" />
 
         <!-- x64 Static link time code generation libraries debugging symbols (.ltcg.pdb) -->
-        <file src="..\\..\\obj\\$(package.target)\\x64\\Release\\$(package.platformtoolset)\\ltcg\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).ltcg.pdb" />
+        <!--<file src="..\\..\\obj\\$(package.target)\\x64\\Release\\$(package.platformtoolset)\\ltcg\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).ltcg.pdb" />-->
         <!--<file src="..\\..\\obj\\$(package.target)\\x64\\Debug\\$(package.platformtoolset)\\ltcg\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.pdb" />-->
     </files>
 <!--

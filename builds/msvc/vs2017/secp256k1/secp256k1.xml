@@ -2,7 +2,6 @@
 <ProjectSchemaDefinitions xmlns="clr-namespace:Microsoft.Build.Framework.XamlTypes;assembly=Microsoft.Build.Framework">
   <Rule Name="secp256k1-options-uiextension" PageTemplate="tool" DisplayName="Secp256k1 Options" SwitchPrefix="/" Order="1">
     <Rule.Categories>
-      <!--<Category Name="gmp" DisplayName="gmp" />-->
       <Category Name="assembly" DisplayName="assembly" />
       <Category Name="config" DisplayName="config" />
       <Category Name="ecdh" DisplayName="ecdh" />
@@ -13,10 +12,6 @@
     <Rule.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="" />
     </Rule.DataSource>
-    <!--<EnumProperty Name="Option-gmp" DisplayName="Use GMP Bignum" Description="Use GMP/MPIR for big numbers." Category="gmp">
-      <EnumValue Name="" DisplayName="No" />
-      <EnumValue Name="true" DisplayName="Yes" />
-    </EnumProperty>-->
     <EnumProperty Name="Option-assembly" DisplayName="Assembler Optimizations" Description="Use x86_64 assembler optimizations." Category="assembly">
       <EnumValue Name="" DisplayName="No" />
       <EnumValue Name="true" DisplayName="Yes" />

@@ -2,8 +2,6 @@
 <ProjectSchemaDefinitions xmlns="clr-namespace:Microsoft.Build.Framework.XamlTypes;assembly=Microsoft.Build.Framework">
   <Rule Name="secp256k1_bench-options-uiextension" PageTemplate="tool" DisplayName="Secp256k1 Bench Options" SwitchPrefix="/" Order="1">
     <Rule.Categories>
-      <!--<Category Name="gmp" DisplayName="gmp" />-->
-      <!--<Category Name="testssl" DisplayName="testssl" />-->
       <Category Name="ecdh" DisplayName="ecdh" />
       <Category Name="recovery" DisplayName="recovery" />
       <Category Name="extrakeys" DisplayName="extrakeys" />
@@ -12,14 +10,6 @@
     <Rule.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="" />
     </Rule.DataSource>
-    <!--<EnumProperty Name="Option-gmp" DisplayName="Use GMP Bignum" Description="Use GMP/MPIR for big numbers." Category="gmp">
-      <EnumValue Name="" DisplayName="No" />
-      <EnumValue Name="true" DisplayName="Yes" />
-    </EnumProperty>-->
-    <!--<EnumProperty Name="Option-testssl" DisplayName="Enable OpenSSL Tests" Description="Enable OpenSSL tests." Category="testssl">
-      <EnumValue Name="" DisplayName="No" />
-      <EnumValue Name="true" DisplayName="Yes" />
-    </EnumProperty>-->
     <EnumProperty Name="Option-ecdh" DisplayName="Build ecdh" Description="Build the ecdh module." Category="ecdh">
       <EnumValue Name="" DisplayName="No" />
       <EnumValue Name="true" DisplayName="Yes" />

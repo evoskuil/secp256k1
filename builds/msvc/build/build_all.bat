@@ -2,7 +2,11 @@
 :: Usage: buildall.bat
 
 :: Build all configurations for all solutions.
-CALL build_base.bat ..\vs2017\secp256k1.sln 15
+CALL build_base.bat ..\vs2022\secp256k1.sln 22
+ECHO.
+CALL build_base.bat ..\vs2019\secp256k1.sln 19
+ECHO.
+CALL build_base.bat ..\vs2017\secp256k1.sln 17
 ECHO.
 CALL build_base.bat ..\vs2015\secp256k1.sln 14
 ECHO.
