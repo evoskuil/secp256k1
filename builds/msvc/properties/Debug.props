@@ -12,7 +12,7 @@
   
   <ItemDefinitionGroup>
     <ClCompile>
-      <!-- This is 'both' in VS opions. -->
+      <!-- This is 'both' in VS opions, incompatible with Optimization::MaxSpeed. -->
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <FunctionLevelLinking>true</FunctionLevelLinking>
