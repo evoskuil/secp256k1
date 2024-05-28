@@ -11,15 +11,29 @@
 #include <stdio.h>
 #include <string.h>
 
-#ifndef _MSC_VER
-#include "sys/time.h"
-#else
-#include <windows.h>
+#ifdef _MSC_VER
+    #include <windows.h>
 
-// TODO: implement gettimeofday for windows builds.
-static double gettimeofday(struct timeval* tv, void* unused) {
-    return 0.0;
+// stackoverflow.com/a/26085827/1172329
+int gettimeofday(struct timeval* tp, struct timezone* tzp)
+{
+    const uint64_t EPOCH = ((uint64_t)116444736000000000ULL);
+
+    SYSTEMTIME  system_time;
+    FILETIME    file_time;
+    uint64_t    time;
+
+    GetSystemTime(&system_time);
+    SystemTimeToFileTime(&system_time, &file_time);
+    time = ((uint64_t)file_time.dwLowDateTime);
+    time += ((uint64_t)file_time.dwHighDateTime) << 32;
+
+    tp->tv_sec = (long)((time - EPOCH) / 10000000L);
+    tp->tv_usec = (long)(system_time.wMilliseconds * 1000);
+    return 0;
 }
+#else
+    #include "sys/time.h"
 #endif
 
 static int64_t gettime_i64(void) {
