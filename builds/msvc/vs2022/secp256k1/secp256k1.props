@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <_PropertySheetDisplayName>SECP256K1 Common Settings</_PropertySheetDisplayName>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+
+  <!-- User Interface -->
+
+  <ItemGroup Label="BuildOptionsExtension">
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)$(ProjectName).xml" />
+  </ItemGroup>
+
+  <!-- Configuration -->
+  
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RepoRoot)src\;$(RepoRoot)\include\;$(RepoRoot);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <!-- C4146: unary minus operator applied to unsigned type, result still unsigned -->
+      <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4244: '=': conversion from 'uint32_t' to 'unsigned char', possible loss of data -->
+      <DisableSpecificWarnings>4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4310: cast truncates constant value -->
+      <DisableSpecificWarnings>4310;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4295: array is too small to include a terminating null character -->
+      <DisableSpecificWarnings>4295;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4706: assignment within conditional expression -->
+      <DisableSpecificWarnings>4706;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4267: '=': conversion from ... to ..., possible loss of data -->
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4127: conditional expression is constant -->
+      <DisableSpecificWarnings>4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      
+      <!-- Set ecmult (autotools defaults, may be required for vc++|win32). -->
+      <PreprocessorDefinitions>ECMULT_WINDOW_SIZE=15;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <!--<PreprocessorDefinitions Condition="'$(ConfigurationType)' == 'DynamicLibrary'">SECP256K1_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>-->
+      
+      <!-- Enable verification macros in debug builds. -->
+      <PreprocessorDefinitions Condition="$(Configuration.IndexOf('Debug')) != -1">VERIFY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+
+      <!-- Build additional modules, extrakeys and schnorrsig are experimental. -->
+      <PreprocessorDefinitions Condition="'$(Option-ecdh)' == 'true'">ENABLE_MODULE_ECDH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Option-recovery)' == 'true'">ENABLE_MODULE_RECOVERY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Option-extrakeys)' == 'true'">ENABLE_MODULE_EXTRAKEYS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Option-schnorrsig)' == 'true'">ENABLE_MODULE_SCHNORRSIG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Option-ellswift)' == 'true'">ENABLE_MODULE_ELLSWIFT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <!-- Options -->
+  
+  <PropertyGroup>
+    <Option-ecdh>true</Option-ecdh>
+    <Option-recovery>true</Option-recovery>
+    <Option-extrakeys>true</Option-extrakeys>
+    <Option-schnorrsig>true</Option-schnorrsig>
+    <Option-ellswift>true</Option-ellswift>
+  </PropertyGroup>
+
+  <!-- Messages -->
+
+  <Target Name="OptionInfo" BeforeTargets="PrepareForBuild">
+    <Message Text="Option-ecdh       : $(Option-ecdh)" Importance="high"/>
+    <Message Text="Option-recovery   : $(Option-recovery)" Importance="high"/>
+    <Message Text="Option-extrakeys  : $(Option-extrakeys)" Importance="high"/>
+    <Message Text="Option-schnorrsig : $(Option-schnorrsig)" Importance="high"/>
+    <Message Text="Option-ellswift   : $(Option-ellswift)" Importance="high"/>
+  </Target>
+
+</Project>
