@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup Label="Globals">
+    <_PropertySheetDisplayName>secp256k1 Import Settings</_PropertySheetDisplayName>
+  </PropertyGroup>
+
+  <!-- User Interface -->
+  
+  <ItemGroup Label="BuildOptionsExtension">
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)secp256k1.import.xml" />
+  </ItemGroup>
+
+  <!-- Options -->
+  
+  <PropertyGroup>
+    <Option-ecdh>true</Option-ecdh>
+    <Option-recovery>true</Option-recovery>
+    <Option-extrakeys>true</Option-extrakeys>
+    <Option-schnorrsig>true</Option-schnorrsig>
+    <Option-ellswift>true</Option-ellswift>
+  </PropertyGroup>
+  
+  <!-- Messages -->
+
+  <Target Name="OptionInfo" BeforeTargets="PrepareForBuild">
+    <Message Text="Option-ecdh       : $(Option-ecdh)" Importance="high"/>
+    <Message Text="Option-recovery   : $(Option-recovery)" Importance="high"/>
+    <Message Text="Option-extrakeys  : $(Option-extrakeys)" Importance="high"/>
+    <Message Text="Option-schnorrsig : $(Option-schnorrsig)" Importance="high"/>
+    <Message Text="Option-ellswift   : $(Option-ellswift)" Importance="high"/>
+  </Target>
+
+  <!-- Linkage -->
+  
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\secp256k1\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+
+      <!-- C4146: unary minus operator applied to unsigned type, result still unsigned -->
+      <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4244: '=': conversion from 'uint32_t' to 'unsigned char', possible loss of data -->
+      <DisableSpecificWarnings>4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4310: cast truncates constant value -->
+      <DisableSpecificWarnings>4310;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4295: array is too small to include a terminating null character -->
+      <DisableSpecificWarnings>4295;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4706: assignment within conditional expression -->
+      <DisableSpecificWarnings>4706;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4267: '=': conversion from ... to ..., possible loss of data -->
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <!-- C4127: conditional expression is constant -->
+      <DisableSpecificWarnings>4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile>
+      <!-- Build additional modules. -->
+      <PreprocessorDefinitions Condition="'$(Option-ecdh)' == 'true'">ENABLE_MODULE_ECDH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Option-recovery)' == 'true'">ENABLE_MODULE_RECOVERY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Option-extrakeys)' == 'true'">ENABLE_MODULE_EXTRAKEYS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Option-schnorrsig)' == 'true'">ENABLE_MODULE_SCHNORRSIG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Option-ellswift)' == 'true'">ENABLE_MODULE_ELLSWIFT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories Condition="$(Configuration.IndexOf('Debug')) != -1">
+        $(ProjectDir)..\..\..\..\..\secp256k1\bin\$(PlatformName)\Debug\$(PlatformToolset)\$(Linkage-secp256k1)\;
+        $(ProjectDir)..\..\..\..\..\secp256k1\obj\secp256k1\$(PlatformName)\Debug\$(PlatformToolset)\$(Linkage-secp256k1)\;%(AdditionalLibraryDirectories)
+      </AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="$(Configuration.IndexOf('Release')) != -1">
+        $(ProjectDir)..\..\..\..\..\secp256k1\bin\$(PlatformName)\Release\$(PlatformToolset)\$(Linkage-secp256k1)\;
+        $(ProjectDir)..\..\..\..\..\secp256k1\obj\secp256k1\$(PlatformName)\Release\$(PlatformToolset)\$(Linkage-secp256k1)\;%(AdditionalLibraryDirectories)
+      </AdditionalLibraryDirectories>
+    </Link>    
+  </ItemDefinitionGroup>
+</Project>
