@@ -38,6 +38,15 @@ libtool
 *.o
 *~
 
+/bin/
+/obj/
+*.VC.*
+*.suo
+*.ipch
+*.sdf
+*.user
+*.vsidx
+
 coverage/
 coverage.html
 coverage.*.html
@@ -64,4 +73,3 @@ libsecp256k1.pc
 ### CMake
 /CMakeUserPresets.json
 # Default CMake build directory.
-/build
