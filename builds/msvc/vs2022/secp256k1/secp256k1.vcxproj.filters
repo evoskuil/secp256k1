@@ -63,6 +63,9 @@
     <Filter Include="contrib">
       <UniqueIdentifier>{04e4187d-b978-49d9-b3b2-b64fd43f82b8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\modules\musig">
+      <UniqueIdentifier>{559a5bef-ec9c-40b0-8019-30dbb6e5bb2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\include\secp256k1.h">
@@ -93,9 +96,6 @@
       <Filter>src\include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\field_5x52.h">
-      <Filter>src\include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\src\field_5x52_asm_impl.h">
       <Filter>src\include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\field_5x52_impl.h">
@@ -310,6 +310,30 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\contrib\lax_der_privatekey_parsing.h">
       <Filter>contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\secp256k1_musig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\modules\musig\session_impl.h">
+      <Filter>src\modules\musig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\modules\musig\tests_impl.h">
+      <Filter>src\modules\musig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\modules\musig\vectors.h">
+      <Filter>src\modules\musig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\modules\musig\keyagg.h">
+      <Filter>src\modules\musig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\modules\musig\keyagg_impl.h">
+      <Filter>src\modules\musig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\modules\musig\main_impl.h">
+      <Filter>src\modules\musig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\modules\musig\session.h">
+      <Filter>src\modules\musig</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

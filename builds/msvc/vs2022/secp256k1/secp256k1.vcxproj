@@ -99,6 +99,7 @@
     <ClInclude Include="..\..\..\..\include\secp256k1_ecdh.h" />
     <ClInclude Include="..\..\..\..\include\secp256k1_ellswift.h" />
     <ClInclude Include="..\..\..\..\include\secp256k1_extrakeys.h" />
+    <ClInclude Include="..\..\..\..\include\secp256k1_musig.h" />
     <ClInclude Include="..\..\..\..\include\secp256k1_preallocated.h" />
     <ClInclude Include="..\..\..\..\include\secp256k1_recovery.h" />
     <ClInclude Include="..\..\..\..\include\secp256k1_schnorrsig.h" />
@@ -122,7 +123,6 @@
     <ClInclude Include="..\..\..\..\src\field_10x26.h" />
     <ClInclude Include="..\..\..\..\src\field_10x26_impl.h" />
     <ClInclude Include="..\..\..\..\src\field_5x52.h" />
-    <ClInclude Include="..\..\..\..\src\field_5x52_asm_impl.h" />
     <ClInclude Include="..\..\..\..\src\field_5x52_impl.h" />
     <ClInclude Include="..\..\..\..\src\field_5x52_int128_impl.h" />
     <ClInclude Include="..\..\..\..\src\field_impl.h" />
@@ -152,6 +152,13 @@
     <ClInclude Include="..\..\..\..\src\modules\extrakeys\main_impl.h" />
     <ClInclude Include="..\..\..\..\src\modules\extrakeys\tests_exhaustive_impl.h" />
     <ClInclude Include="..\..\..\..\src\modules\extrakeys\tests_impl.h" />
+    <ClInclude Include="..\..\..\..\src\modules\musig\keyagg.h" />
+    <ClInclude Include="..\..\..\..\src\modules\musig\keyagg_impl.h" />
+    <ClInclude Include="..\..\..\..\src\modules\musig\main_impl.h" />
+    <ClInclude Include="..\..\..\..\src\modules\musig\session.h" />
+    <ClInclude Include="..\..\..\..\src\modules\musig\session_impl.h" />
+    <ClInclude Include="..\..\..\..\src\modules\musig\tests_impl.h" />
+    <ClInclude Include="..\..\..\..\src\modules\musig\vectors.h" />
     <ClInclude Include="..\..\..\..\src\modules\recovery\bench_impl.h" />
     <ClInclude Include="..\..\..\..\src\modules\recovery\main_impl.h" />
     <ClInclude Include="..\..\..\..\src\modules\recovery\tests_exhaustive_impl.h" />
