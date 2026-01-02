@@ -27,68 +27,68 @@
   </ItemDefinitionGroup>
 
   <!-- static libraries -->
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'static' And $(Configuration.IndexOf('Release')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'static' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x86-v143-mt-s-0_1_0_21.static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x86-v143-mt-s-0_5_1_0.static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'static' And $(Configuration.IndexOf('Debug')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'static' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x86-v143-mt-sgd-0_1_0_21.static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x86-v143-mt-sgd-0_5_1_0.static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'static' And $(Configuration.IndexOf('Release')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'static' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x64-v143-mt-s-0_1_0_21.static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x64-v143-mt-s-0_5_1_0.static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'static' And $(Configuration.IndexOf('Debug')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'static' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x64-v143-mt-sgd-0_1_0_21.static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x64-v143-mt-sgd-0_5_1_0.static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 
   <!-- ltcg libraries -->
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'ltcg' And $(Configuration.IndexOf('Release')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'ltcg' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x86-v143-mt-s-0_1_0_21.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x86-v143-mt-s-0_5_1_0.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'ltcg' And $(Configuration.IndexOf('Debug')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'ltcg' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x86-v143-mt-sgd-0_1_0_21.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x86-v143-mt-sgd-0_5_1_0.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'ltcg' And $(Configuration.IndexOf('Release')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'ltcg' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x64-v143-mt-s-0_1_0_21.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x64-v143-mt-s-0_5_1_0.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'ltcg' And $(Configuration.IndexOf('Debug')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'ltcg' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x64-v143-mt-sgd-0_1_0_21.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x64-v143-mt-sgd-0_5_1_0.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 
   <!-- dynamic import libraries -->
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'dynamic' And $(Configuration.IndexOf('Release')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'dynamic' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x86-v143-mt-0_1_0_21.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x86-v143-mt-0_5_1_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'dynamic' And $(Configuration.IndexOf('Debug')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'dynamic' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x86-v143-mt-gd-0_1_0_21.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x86-v143-mt-gd-0_5_1_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'dynamic' And $(Configuration.IndexOf('Release')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'dynamic' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x64-v143-mt-0_1_0_21.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x64-v143-mt-0_5_1_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-secp256k1)' == 'dynamic' And $(Configuration.IndexOf('Debug')) != -1">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Linkage-secp256k1)' == 'dynamic' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>secp256k1-x64-v143-mt-gd-0_1_0_21.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>secp256k1-x64-v143-mt-gd-0_5_1_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 
