@@ -7,7 +7,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
     <metadata minClientVersion="2.5">
         <id>secp256k1_vc143</id>
-        <version>0.1.0.21</version>
+        <version>0.5.1.0</version>
         <title>secp256k1_vc143</title>
         <authors>Pieter Wuille and secp256k1 contributors</authors>
         <owners>Eric Voskuil</owners>
@@ -44,68 +44,68 @@
         <!-- vc14* never builds .pdb for static/ltcg debug. -->
 
 <!-- x86 Dynamic libraries (.dll) -->
-        <!--<file src="..\..\bin\Win32\Release\v143\dynamic\secp256k1.dll" target="build\native\bin\secp256k1-x86-v143-mt-0_1_0_21.dll" />-->
-        <!--<file src="..\..\bin\Win32\Debug\v143\dynamic\secp256k1.dll" target="build\native\bin\secp256k1-x86-v143-mt-gd-0_1_0_21.dll" />-->
+        <!--<file src="..\..\bin\Win32\Release\v143\dynamic\secp256k1.dll" target="build\native\bin\secp256k1-x86-v143-mt-0_5_1_0.dll" />-->
+        <!--<file src="..\..\bin\Win32\Debug\v143\dynamic\secp256k1.dll" target="build\native\bin\secp256k1-x86-v143-mt-gd-0_5_1_0.dll" />-->
 
         <!-- x86 Debugging symbols (.pdb) -->
-        <!--<file src="..\..\bin\Win32\Release\v143\dynamic\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-0_1_0_21.pdb" />-->
-        <!--<file src="..\..\bin\Win32\Debug\v143\dynamic\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-gd-0_1_0_21.pdb" />-->
+        <!--<file src="..\..\bin\Win32\Release\v143\dynamic\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-0_5_1_0.pdb" />-->
+        <!--<file src="..\..\bin\Win32\Debug\v143\dynamic\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-gd-0_5_1_0.pdb" />-->
 
         <!-- x86 Import libraries (.lib) -->
-        <!--<file src="..\..\bin\Win32\Release\v143\dynamic\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-0_1_0_21.lib" />-->
-        <!--<file src="..\..\bin\Win32\Debug\v143\dynamic\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-gd-0_1_0_21.lib" />-->
+        <!--<file src="..\..\bin\Win32\Release\v143\dynamic\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-0_5_1_0.lib" />-->
+        <!--<file src="..\..\bin\Win32\Debug\v143\dynamic\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-gd-0_5_1_0.lib" />-->
 
         <!-- x86 Export libraries (.exp) -->
-        <!--<file src="..\..\bin\Win32\Release\v143\dynamic\secp256k1.exp" target="build\native\bin\secp256k1-x86-v143-mt-0_1_0_21.exp" />-->
-        <!--<file src="..\..\bin\Win32\Debug\v143\dynamic\secp256k1.exp" target="build\native\bin\secp256k1-x86-v143-mt-gd-0_1_0_21.exp" />-->
+        <!--<file src="..\..\bin\Win32\Release\v143\dynamic\secp256k1.exp" target="build\native\bin\secp256k1-x86-v143-mt-0_5_1_0.exp" />-->
+        <!--<file src="..\..\bin\Win32\Debug\v143\dynamic\secp256k1.exp" target="build\native\bin\secp256k1-x86-v143-mt-gd-0_5_1_0.exp" />-->
 
  <!-- x86 Static libraries (.lib) -->
-        <file src="..\..\bin\Win32\Release\v143\static\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-s-0_1_0_21.static.lib" />
-        <file src="..\..\bin\Win32\Debug\v143\static\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-sgd-0_1_0_21.static.lib" />
+        <file src="..\..\bin\Win32\Release\v143\static\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-s-0_5_1_0.static.lib" />
+        <file src="..\..\bin\Win32\Debug\v143\static\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-sgd-0_5_1_0.static.lib" />
 
         <!-- x86 Static libraries debugging symbols (.static.pdb) -->
-        <!--<file src="..\..\obj\secp256k1\Win32\Release\v143\static\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-s-0_1_0_21.static.pdb" />-->
-        <!--<file src="..\..\obj\secp256k1\Win32\Debug\v143\static\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-sgd-0_1_0_21.static.pdb" />-->
+        <!--<file src="..\..\obj\secp256k1\Win32\Release\v143\static\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-s-0_5_1_0.static.pdb" />-->
+        <!--<file src="..\..\obj\secp256k1\Win32\Debug\v143\static\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-sgd-0_5_1_0.static.pdb" />-->
 
 <!-- x86 Static link time code generation libraries (.ltcg.lib) -->
-        <file src="..\..\bin\Win32\Release\v143\ltcg\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-s-0_1_0_21.ltcg.lib" />
-        <file src="..\..\bin\Win32\Debug\v143\ltcg\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-sgd-0_1_0_21.ltcg.lib" />
+        <file src="..\..\bin\Win32\Release\v143\ltcg\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-s-0_5_1_0.ltcg.lib" />
+        <file src="..\..\bin\Win32\Debug\v143\ltcg\secp256k1.lib" target="build\native\bin\secp256k1-x86-v143-mt-sgd-0_5_1_0.ltcg.lib" />
 
         <!-- x86 Static link time code generation libraries debugging symbols (.ltcg.pdb) -->
-        <!--<file src="..\..\obj\secp256k1\Win32\Release\v143\ltcg\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-s-0_1_0_21.ltcg.pdb" />-->
-        <!--<file src="..\..\obj\secp256k1\Win32\Debug\v143\ltcg\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-sgd-0_1_0_21.ltcg.pdb" />-->
+        <!--<file src="..\..\obj\secp256k1\Win32\Release\v143\ltcg\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-s-0_5_1_0.ltcg.pdb" />-->
+        <!--<file src="..\..\obj\secp256k1\Win32\Debug\v143\ltcg\secp256k1.pdb" target="build\native\bin\secp256k1-x86-v143-mt-sgd-0_5_1_0.ltcg.pdb" />-->
 
 <!-- x64 Dynamic libraries (.dll) -->
-        <!--<file src="..\..\bin\x64\Release\v143\dynamic\secp256k1.dll" target="build\native\bin\secp256k1-x64-v143-mt-0_1_0_21.dll" />-->
-        <!--<file src="..\..\bin\x64\Debug\v143\dynamic\secp256k1.dll" target="build\native\bin\secp256k1-x64-v143-mt-gd-0_1_0_21.dll" />-->
+        <!--<file src="..\..\bin\x64\Release\v143\dynamic\secp256k1.dll" target="build\native\bin\secp256k1-x64-v143-mt-0_5_1_0.dll" />-->
+        <!--<file src="..\..\bin\x64\Debug\v143\dynamic\secp256k1.dll" target="build\native\bin\secp256k1-x64-v143-mt-gd-0_5_1_0.dll" />-->
 
         <!-- x64 Debugging symbols (.pdb) -->
-        <!--<file src="..\..\bin\x64\Release\v143\dynamic\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-0_1_0_21.pdb" />-->
-        <!--<file src="..\..\bin\x64\Debug\v143\dynamic\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-gd-0_1_0_21.pdb" />-->
+        <!--<file src="..\..\bin\x64\Release\v143\dynamic\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-0_5_1_0.pdb" />-->
+        <!--<file src="..\..\bin\x64\Debug\v143\dynamic\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-gd-0_5_1_0.pdb" />-->
 
         <!-- x64 Import libraries (.lib) -->
-        <!--<file src="..\..\bin\x64\Release\v143\dynamic\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-0_1_0_21.lib" />-->
-        <!--<file src="..\..\bin\x64\Debug\v143\dynamic\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-gd-0_1_0_21.lib" />-->
+        <!--<file src="..\..\bin\x64\Release\v143\dynamic\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-0_5_1_0.lib" />-->
+        <!--<file src="..\..\bin\x64\Debug\v143\dynamic\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-gd-0_5_1_0.lib" />-->
 
         <!-- x64 Export libraries (.exp) -->
-        <!--<file src="..\..\bin\x64\Release\v143\dynamic\secp256k1.exp" target="build\native\bin\secp256k1-x64-v143-mt-0_1_0_21.exp" />-->
-        <!--<file src="..\..\bin\x64\Debug\v143\dynamic\secp256k1.exp" target="build\native\bin\secp256k1-x64-v143-mt-gd-0_1_0_21.exp" />-->
+        <!--<file src="..\..\bin\x64\Release\v143\dynamic\secp256k1.exp" target="build\native\bin\secp256k1-x64-v143-mt-0_5_1_0.exp" />-->
+        <!--<file src="..\..\bin\x64\Debug\v143\dynamic\secp256k1.exp" target="build\native\bin\secp256k1-x64-v143-mt-gd-0_5_1_0.exp" />-->
 
 <!-- x64 Static libraries (.lib) -->
-        <file src="..\..\bin\x64\Release\v143\static\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-s-0_1_0_21.static.lib" />
-        <file src="..\..\bin\x64\Debug\v143\static\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-sgd-0_1_0_21.static.lib" />
+        <file src="..\..\bin\x64\Release\v143\static\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-s-0_5_1_0.static.lib" />
+        <file src="..\..\bin\x64\Debug\v143\static\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-sgd-0_5_1_0.static.lib" />
 
         <!-- x64 Static libraries debugging symbols (.static.pdb) -->
-        <!--<file src="..\..\obj\secp256k1\x64\Release\v143\static\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-s-0_1_0_21.static.pdb" />-->
-        <!--<file src="..\..\obj\secp256k1\x64\Debug\v143\static\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-sgd-0_1_0_21.static.pdb" />-->
+        <!--<file src="..\..\obj\secp256k1\x64\Release\v143\static\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-s-0_5_1_0.static.pdb" />-->
+        <!--<file src="..\..\obj\secp256k1\x64\Debug\v143\static\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-sgd-0_5_1_0.static.pdb" />-->
 
 <!-- x64 Static link time code generation libraries (.ltcg.lib) -->
-        <file src="..\..\bin\x64\Release\v143\ltcg\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-s-0_1_0_21.ltcg.lib" />
-        <file src="..\..\bin\x64\Debug\v143\ltcg\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-sgd-0_1_0_21.ltcg.lib" />
+        <file src="..\..\bin\x64\Release\v143\ltcg\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-s-0_5_1_0.ltcg.lib" />
+        <file src="..\..\bin\x64\Debug\v143\ltcg\secp256k1.lib" target="build\native\bin\secp256k1-x64-v143-mt-sgd-0_5_1_0.ltcg.lib" />
 
         <!-- x64 Static link time code generation libraries debugging symbols (.ltcg.pdb) -->
-        <!--<file src="..\..\obj\secp256k1\x64\Release\v143\ltcg\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-s-0_1_0_21.ltcg.pdb" />-->
-        <!--<file src="..\..\obj\secp256k1\x64\Debug\v143\ltcg\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-sgd-0_1_0_21.ltcg.pdb" />-->
+        <!--<file src="..\..\obj\secp256k1\x64\Release\v143\ltcg\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-s-0_5_1_0.ltcg.pdb" />-->
+        <!--<file src="..\..\obj\secp256k1\x64\Debug\v143\ltcg\secp256k1.pdb" target="build\native\bin\secp256k1-x64-v143-mt-sgd-0_5_1_0.ltcg.pdb" />-->
     </files>
 <!--
 #################################################################
