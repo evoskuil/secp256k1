@@ -39,6 +39,15 @@ libtool
 *.o
 *~
 
+/bin/
+/obj/
+*.VC.*
+*.suo
+*.ipch
+*.sdf
+*.user
+*.vsidx
+
 coverage/
 coverage.html
 coverage.*.html
