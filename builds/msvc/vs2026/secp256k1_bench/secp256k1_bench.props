@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <_PropertySheetDisplayName>SECP256K1 Bench Common Settings</_PropertySheetDisplayName>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+
+  <!-- User Interface -->
+
+  <ItemGroup Label="BuildOptionsExtension">
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)$(ProjectName).xml" />
+  </ItemGroup>
+
+  <!-- Configuration -->
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RepoRoot)\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+
+      <!-- Set ecmult (autotools defaults, may be required for vc++|win32). -->
+      <PreprocessorDefinitions>ECMULT_WINDOW_SIZE=15;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <!--<PreprocessorDefinitions Condition="'$(ConfigurationType)' == 'DynamicLibrary'">SECP256K1_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>-->
+      
+      <!-- Enable verification macros in debug builds. -->
+      <PreprocessorDefinitions Condition="$(Configuration.IndexOf('Debug')) != -1">VERIFY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <!-- docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098 -->
+      <AdditionalOptions Condition="'$(DefaultLinkage)' == 'dynamic' And '$(DebugOrRelease)' == 'Release'">/NODEFAULTLIB:libcmt.lib $(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(DefaultLinkage)' == 'dynamic' And '$(DebugOrRelease)' == 'Debug'">/NODEFAULTLIB:libcmtd.lib $(AdditionalOptions)</AdditionalOptions>
+    </Link>  
+  </ItemDefinitionGroup>
+
+  <!-- Dependencies -->
+  
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)secp256k1.import.props" />
+  </ImportGroup>
+
+  <PropertyGroup Condition="'$(DefaultLinkage)' == 'dynamic'">
+    <Linkage-secp256k1>dynamic</Linkage-secp256k1>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(DefaultLinkage)' == 'ltcg'">
+    <Linkage-secp256k1>ltcg</Linkage-secp256k1>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(DefaultLinkage)' == 'static'">
+    <Linkage-secp256k1>static</Linkage-secp256k1>
+  </PropertyGroup>
+
+  <!-- Messages -->
+
+  <Target Name="LinkageInfo" BeforeTargets="PrepareForBuild">
+    <Message Text="Linkage-secp256k1 : $(Linkage-secp256k1)" Importance="high"/>
+  </Target>
+
+</Project>
+
+
+

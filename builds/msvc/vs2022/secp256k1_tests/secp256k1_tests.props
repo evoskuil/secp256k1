@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <_PropertySheetDisplayName>SECP256K1 Tests Common Settings</_PropertySheetDisplayName>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+
+  <!-- User Interface -->
+
+  <ItemGroup Label="BuildOptionsExtension">
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)$(ProjectName).xml" />
+  </ItemGroup>
+
+  <!-- Configuration -->
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RepoRoot)\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+
+      <!-- Set ecmult (autotools defaults, may be required for vc++|win32). -->
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;ECMULT_WINDOW_SIZE=15;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <!--<PreprocessorDefinitions Condition="'$(ConfigurationType)' == 'DynamicLibrary'">SECP256K1_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>-->
+      
+      <!-- Enable verification macros in debug builds. -->
+      <PreprocessorDefinitions Condition="$(Configuration.IndexOf('Debug')) != -1">VERIFY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command Condition="'$(DebugOrRelease)' == 'Release'">$(TargetPath) 5 41234567890987654321</Command>
+    </PostBuildEvent>    
+  </ItemDefinitionGroup>
+
+  <!-- Dependencies -->
+  
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)secp256k1.import.props" />
+  </ImportGroup>
+
+  <PropertyGroup Condition="'$(DefaultLinkage)' == 'dynamic'">
+    <Linkage-secp256k1>dynamic</Linkage-secp256k1>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(DefaultLinkage)' == 'ltcg'">
+    <Linkage-secp256k1>ltcg</Linkage-secp256k1>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(DefaultLinkage)' == 'static'">
+    <Linkage-secp256k1>static</Linkage-secp256k1>
+  </PropertyGroup>
+
+  <!-- Messages -->
+
+  <Target Name="LinkageInfo" BeforeTargets="PrepareForBuild">
+    <Message Text="Linkage-secp256k1 : $(Linkage-secp256k1)" Importance="high"/>
+  </Target>
+
+</Project>
+
+
+
